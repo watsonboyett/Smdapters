@@ -295,6 +295,36 @@
 <rectangle x1="2.8" y1="0.385" x2="4.1" y2="0.885" layer="51" rot="R180"/>
 <rectangle x1="2.8" y1="1.655" x2="4.1" y2="2.155" layer="51" rot="R180"/>
 </package>
+<package name="TO263-3">
+<smd name="3" x="0" y="0" dx="10.668" dy="9.144" layer="1"/>
+<smd name="1" x="-2.54" y="-10.16" dx="3.556" dy="1.524" layer="1" rot="R90"/>
+<smd name="2" x="2.54" y="-10.16" dx="3.556" dy="1.524" layer="1" rot="R90"/>
+<wire x1="-5.08" y1="-6.604" x2="-5.08" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="5.08" y2="3.048" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.048" x2="5.08" y2="-6.604" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.604" x2="-5.08" y2="-6.604" width="0.127" layer="21"/>
+<rectangle x1="-5.08" y1="3.048" x2="5.08" y2="4.318" layer="51"/>
+<rectangle x1="-3.175" y1="-10.668" x2="-1.905" y2="-6.604" layer="51"/>
+<rectangle x1="1.905" y1="-10.668" x2="3.175" y2="-6.604" layer="51"/>
+<text x="-6.35" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;NAME</text>
+<text x="6.35" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;VALUE</text>
+</package>
+<package name="TO263-3+">
+<smd name="4" x="0" y="0" dx="10.668" dy="9.144" layer="1"/>
+<smd name="1" x="-2.54" y="-10.16" dx="3.556" dy="1.524" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="-10.16" dx="3.556" dy="1.524" layer="1" rot="R90"/>
+<wire x1="-5.08" y1="-6.604" x2="-5.08" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="5.08" y2="3.048" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.048" x2="5.08" y2="-6.604" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-6.604" x2="-5.08" y2="-6.604" width="0.127" layer="21"/>
+<rectangle x1="-5.08" y1="3.048" x2="5.08" y2="4.318" layer="51"/>
+<rectangle x1="-3.175" y1="-10.668" x2="-1.905" y2="-6.604" layer="51"/>
+<rectangle x1="1.905" y1="-10.668" x2="3.175" y2="-6.604" layer="51"/>
+<text x="-6.35" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;NAME</text>
+<text x="6.35" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;VALUE</text>
+<smd name="2" x="0" y="-10.16" dx="3.556" dy="1.524" layer="1" rot="R90"/>
+<rectangle x1="-0.635" y1="-10.668" x2="0.635" y2="-6.604" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="4-PIN">
@@ -398,6 +428,16 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_TO263" package="TO263-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="4-PIN">
@@ -428,6 +468,17 @@
 </technologies>
 </device>
 <device name="_TO252" package="TO252-3+">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_TO263" package="TO263-3+">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
